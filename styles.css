@@ -1,0 +1,23 @@
+body {background-color: #ffffff;}
+
+button {
+	background-color: #ffffff5d;
+	border-radius: 8px;
+	border: none;
+	position: relative;
+	top: 50%;
+	left: 50%;
+}
+
+p {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	align-content: center;
+}
+
+.buttonDiv {
+	position: relative;
+	top: 50%;
+	left: 50%;
+}
