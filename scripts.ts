@@ -1,16 +1,22 @@
 
 var prevColour = "#FFFFFF";
-function changeBackgroundColour() {
-	localStorage.setItem("prevColour", prevColour)
+
+function getRandomColour() {
 	var colour = '#'+(Math.random()*0xFFFFFF<<0).toString(16).toUpperCase();
-	prevColour = colour;
-	document.body.style.background = colour;
-	document.getElementById("colourButton").innerHTML = colour;	
+	return colour;
+
+
 }
 
-function getPreviousColour() {
-	var colour = localStorage.getItem("prevColour");
+function setColour(choice) {
+	if (choice === "prev") {
+		var colour = localStorage.getItem("prevColour");
+	}
+	else {
+		var colour = getRandomColour()
+	}
+	localStorage.setItem("prevColour", prevColour);
+	prevColour = colour
 	document.getElementById("colourButton").innerHTML = colour;
 	document.body.style.background = colour;
-
 }
