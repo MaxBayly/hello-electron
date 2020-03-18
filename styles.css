@@ -1,5 +1,5 @@
 body {
-	background-color: #FFFFFF;
+	background-color: #CCCCCC;
 	height: 100%;
 	display: grid;
 }
@@ -38,4 +38,5 @@ p {
 	margin-right: auto;
 	width: 50%;
 	text-align: center;
+	padding-bottom: .5rem;
 }
