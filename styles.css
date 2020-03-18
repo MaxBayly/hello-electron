@@ -1,12 +1,15 @@
-body {background-color: #ffffff;}
+body {
+	background-color: #FFFFFF;
+	height: 100%;
+	display: grid;
+}
 
 button {
 	background-color: #ffffff5d;
 	border-radius: 8px;
 	border: none;
-	position: relative;
-	top: 50%;
-	left: 50%;
+	font-size: 2rem;
+
 }
 
 p {
@@ -16,8 +19,23 @@ p {
 	align-content: center;
 }
 
+.outer {
+	display: table;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+  
+.middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+
 .buttonDiv {
-	position: relative;
-	top: 50%;
-	left: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	text-align: center;
 }
